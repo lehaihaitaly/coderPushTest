@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20221024 20:55:38.705" generator="Robot 3.2.2 (Python 2.7.17 on linux2)">
+<suite source="/home/ha/PycharmProjects/sample/testcases/test.robot" id="s1" name="Test">
+<test id="s1-t1" name="Testcase 1">
+<kw name="Given I went to the Sleek SG &quot;Home&quot; page" library="shareHoldersKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://sleek.com/sg/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20221024 20:55:38.833" level="INFO">Opening browser 'chrome' to base url 'https://sleek.com/sg/'.</msg>
+<status status="PASS" endtime="20221024 20:55:41.639" starttime="20221024 20:55:38.832"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20221024 20:55:41.781" starttime="20221024 20:55:41.640"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:55:41.781" starttime="20221024 20:55:38.832"></status>
+</kw>
+<kw name="When I click on the &quot;Pricing&quot; link" library="shareHoldersKeywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>link:${link}</arg>
+</arguments>
+<msg timestamp="20221024 20:55:41.784" level="INFO">Clicking link 'link:Pricing'.</msg>
+<status status="PASS" endtime="20221024 20:55:44.216" starttime="20221024 20:55:41.783"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:55:44.217" starttime="20221024 20:55:41.782"></status>
+</kw>
+<kw name="Then I should be navigated to the Sleek SG &quot;Pricing&quot; page" library="shareHoldersKeywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Singapore's best value for money!</arg>
+</arguments>
+<status status="PASS" endtime="20221024 20:55:44.241" starttime="20221024 20:55:44.217"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:55:44.241" starttime="20221024 20:55:44.217"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20221024 20:55:44.305" starttime="20221024 20:55:44.242"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:55:44.306" critical="yes" starttime="20221024 20:55:38.831"></status>
+</test>
+<test id="s1-t2" name="Testcase 2">
+<kw name="Given I am on the Sleek SG &quot;Pricing&quot; page" library="shareHoldersKeywords">
+<kw name="I went to the Sleek SG &quot;${page}&quot; page" library="shareHoldersKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://sleek.com/sg/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20221024 20:55:44.309" level="INFO">Opening browser 'chrome' to base url 'https://sleek.com/sg/'.</msg>
+<status status="PASS" endtime="20221024 20:55:47.646" starttime="20221024 20:55:44.309"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20221024 20:55:47.824" starttime="20221024 20:55:47.646"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:55:47.824" starttime="20221024 20:55:44.308"></status>
+</kw>
+<kw name="I click on the &quot;${page}&quot; link" library="shareHoldersKeywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>link:${link}</arg>
+</arguments>
+<msg timestamp="20221024 20:55:47.826" level="INFO">Clicking link 'link:Pricing'.</msg>
+<status status="PASS" endtime="20221024 20:55:49.368" starttime="20221024 20:55:47.826"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:55:49.368" starttime="20221024 20:55:47.825"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20221024 20:55:53.369" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20221024 20:55:53.369" starttime="20221024 20:55:49.369"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:55:53.370" starttime="20221024 20:55:44.308"></status>
+</kw>
+<kw name="When I click on section &quot;corporate-secretary&quot;" library="shareHoldersKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@href="/sg/${string}-singapore/"]</arg>
+</arguments>
+<msg timestamp="20221024 20:55:53.372" level="INFO">Clicking element 'xpath=//a[@href="/sg/corporate-secretary-singapore/"]'.</msg>
+<status status="PASS" endtime="20221024 20:55:54.709" starttime="20221024 20:55:53.371"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:55:54.710" starttime="20221024 20:55:53.370"></status>
+</kw>
+<kw name="And Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Effortless company secretary services in Singapore</arg>
+</arguments>
+<status status="PASS" endtime="20221024 20:55:54.794" starttime="20221024 20:55:54.711"></status>
+</kw>
+<kw name="Then I choose &quot;2 Shareholders&quot; and the price is &quot;S$360/year&quot;" library="shareHoldersKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>id=no_of_shareholders</arg>
+</arguments>
+<status status="PASS" endtime="20221024 20:56:01.911" starttime="20221024 20:55:54.796"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>no_of_shareholders</arg>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20221024 20:56:01.911" level="INFO">Selecting options from selection list 'no_of_shareholders' by label 2 Shareholders.</msg>
+<status status="PASS" endtime="20221024 20:56:02.037" starttime="20221024 20:56:01.911"></status>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>id=text_new_amount</arg>
+<arg>${price}</arg>
+<arg>timeout=10s</arg>
+</arguments>
+<status status="PASS" endtime="20221024 20:56:02.103" starttime="20221024 20:56:02.038"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20221024 20:56:06.103" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20221024 20:56:06.104" starttime="20221024 20:56:02.103"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:56:06.104" starttime="20221024 20:55:54.795"></status>
+</kw>
+<kw name="Then I choose &quot;6 - 9 Shareholders&quot; and the price is &quot;S$540/year&quot;" library="shareHoldersKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>id=no_of_shareholders</arg>
+</arguments>
+<status status="PASS" endtime="20221024 20:56:06.399" starttime="20221024 20:56:06.105"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>no_of_shareholders</arg>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20221024 20:56:06.400" level="INFO">Selecting options from selection list 'no_of_shareholders' by label 6 - 9 Shareholders.</msg>
+<status status="PASS" endtime="20221024 20:56:06.515" starttime="20221024 20:56:06.399"></status>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>id=text_new_amount</arg>
+<arg>${price}</arg>
+<arg>timeout=10s</arg>
+</arguments>
+<status status="PASS" endtime="20221024 20:56:06.533" starttime="20221024 20:56:06.515"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20221024 20:56:10.535" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20221024 20:56:10.536" starttime="20221024 20:56:06.534"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:56:10.537" starttime="20221024 20:56:06.105"></status>
+</kw>
+<kw name="Then I choose &quot;&gt;30 Shareholders&quot; and the price is &quot;S$1,140/year&quot;" library="shareHoldersKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>id=no_of_shareholders</arg>
+</arguments>
+<status status="PASS" endtime="20221024 20:56:10.814" starttime="20221024 20:56:10.540"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>no_of_shareholders</arg>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20221024 20:56:10.815" level="INFO">Selecting options from selection list 'no_of_shareholders' by label &gt;30 Shareholders.</msg>
+<status status="PASS" endtime="20221024 20:56:10.941" starttime="20221024 20:56:10.814"></status>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>id=text_new_amount</arg>
+<arg>${price}</arg>
+<arg>timeout=10s</arg>
+</arguments>
+<status status="PASS" endtime="20221024 20:56:10.961" starttime="20221024 20:56:10.942"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20221024 20:56:14.961" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20221024 20:56:14.962" starttime="20221024 20:56:10.961"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:56:14.962" starttime="20221024 20:56:10.538"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20221024 20:56:15.029" starttime="20221024 20:56:14.962"></status>
+</kw>
+<status status="PASS" endtime="20221024 20:56:15.029" critical="yes" starttime="20221024 20:55:44.307"></status>
+</test>
+<status status="PASS" endtime="20221024 20:56:15.030" starttime="20221024 20:55:38.707"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="2">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
